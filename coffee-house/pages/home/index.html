@@ -1,41 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="../../assets/icons/logo.png">
-    <link rel="stylesheet" href="./style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../../assets/icons/logo.png" />
+    <link rel="stylesheet" href="./style.css" />
     <title>Coffee House</title>
-</head>
-<body>
+  </head>
+  <body>
     <header class="header">
-        <div class="container">
-            <div class="header-menu">
-                <div class="logo"></div>
-                <nav class="nav">
-                    <ul class="nav__list">
-                        <li class="nav__item">Favorite coffee</li>
-                        <li class="nav__item">About</li>
-                        <li class="nav__item">Mobile app</li>
-                        <li class="nav__item">Contact us</li>
-                    </ul>
-                </nav>
-                <div class="coffee-menu">
-                    <div class="coffee-menu__item">Menu</div>
-                    <div class="coffee-menu__cup"></div>
-                </div>
-            </div>
-            <section class="enjoy">
-                <div class="offer">
-                    <span class="italic-text">Enjoy</span><span class="offer-text">&nbsp;premium coffee at our charming cafe</span>
-                    <p class="description">
-                        With its inviting atmosphere and delicious coffee options, the Coffee House Resource is a popular destination for coffee lovers and those seeking a warm and inviting space to enjoy their favorite beverage.
-                    </p>
-                    <button class="offer-button">Menu</button>
-                </div>
-            </section>
+      <div class="container">
+        <div class="header-menu">
+          <div class="logo"></div>
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__item">Favorite coffee</li>
+              <li class="nav__item">About</li>
+              <li class="nav__item">Mobile app</li>
+              <li class="nav__item">Contact us</li>
+            </ul>
+          </nav>
+          <div class="coffee-menu">
+            <div class="coffee-menu__item">Menu</div>
+            <div class="coffee-menu__cup"></div>
+          </div>
         </div>
+        <section class="enjoy">
+          <div class="offer">
+            <h1 class="offer-text">
+              <span class="italic-text">Enjoy</span>&nbsp;premium coffee at our
+              charming cafe
+            </h1>
+            <p class="description">
+              With its inviting atmosphere and delicious coffee options, the
+              Coffee House Resource is a popular destination for coffee lovers
+              and those seeking a warm and inviting space to enjoy their
+              favorite beverage.
+            </p>
+            <button class="offer-button">Menu</button>
+          </div>
+        </section>
+      </div>
     </header>
-    
-</body>
+    <section class="favorite-coffee">
+      <div class="container">
+        <h2 class="favorite-coffee__text">
+          Choose your <span class="favorite">favorite</span> coffee
+        </h2>
+        <div class="carousel">
+          <button class="left-btn"></button>
+          <div class="slider">
+            <div class="coffee">
+              <div class="coffee__pic"></div>
+              <h3 class="coffee__name">S&#39;mores Frappuccino</h3>
+              <div class="coffee__description">
+                This new drink takes an espresso and mixes it with brown sugar
+                and cinnamon before being topped with oat milk.
+              </div>
+              <div class="coffee__price">$5.50</div>
+            </div>
+          </div>
+          <button class="right-btn"></button>
+        </div>
+        <div class="controls">
+          <div class="control"></div>
+          <div class="control"></div>
+          <div class="control"></div>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>

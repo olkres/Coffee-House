@@ -82,13 +82,16 @@
 
 }
 
+/*HEADER END*/
+
+/*ENJOY START*/
+
 .enjoy {
     background-image: url(../../assets/images/img-hero.jpg);
     max-width: 1440px;
     height: 645px;
     background-position: center;
     background-size: cover;
-    background-repeat: no-repeat;
     border-radius: 40px;
 }
 
@@ -133,3 +136,106 @@
     line-height: 150%;
 }
 
+/*ENJOY END*/
+
+/*FAVORITE COFFEE START*/
+
+.favorite-coffee__text {
+    color: var(--text-dark, #403F3D);
+    text-align: center;
+    font-family: Inter-SemiBold;
+    font-size: 60px;
+    line-height: 125%;
+    padding-top: 100px;
+}
+.favorite {
+    color: var(--text-accent, #B0907A);
+    font-family: Inter-SemiBoldItalic;
+    font-size: 60px;
+    line-height: 125%;
+}
+
+.carousel {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-btn {
+    position: absolute;
+    top: 329px;
+    left: 5px;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    border: 1px solid var(--border-dark, #665F55);
+    background-color: var(--background-body, #E1D4C9);
+    background-image: url(../../assets/icons/arrow-left.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.slider {
+    margin: 0 auto;
+}
+
+.coffee {
+    width: 480px;
+    padding-top: 40px;
+}
+.coffee__pic {
+    background-image: url(../../assets/images/coffee-slider-1.png);
+    width: 480px;
+    height: 480px;
+    background-size: cover;
+}
+.coffee__name {
+    padding-top: 20px;
+    color: var(--text-dark, #403F3D);
+    text-align: center;
+    font-family: Inter-SemiBold;
+    font-size: 24px;
+    line-height: 125%;
+}
+.coffee__description {
+    padding-top: 15px;
+    color: var(--text-dark, #403F3D);
+    text-align: center;
+    font-family: Inter-Regular;
+    line-height: 150%;
+}
+.coffee__price {
+    padding-top: 16px;
+    color: var(--text-dark, #403F3D);
+    text-align: center;
+    font-family: Inter-SemiBold;
+    font-size: 24px;
+    line-height: 125%;
+}
+.right-btn {
+    position: absolute;
+    top: 329px;
+    right: 5px;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    border: 1px solid var(--border-dark, #665F55);
+    background-color: var(--background-body, #E1D4C9);
+    background-image: url(../../assets/icons/arrow-right.svg);
+    background-position: center;
+    background-repeat: no-repeat; 
+}
+
+.controls {
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+.control {
+    width: 40px;
+    height: 4px;
+    border-radius: 100px;
+    background: var(--border-dark, #665F55);
+}
