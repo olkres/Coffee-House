@@ -148,7 +148,7 @@
     line-height: 125%;
     padding-top: 100px;
 }
-.favorite {
+.red-italic {
     color: var(--text-accent, #B0907A);
     font-family: Inter-SemiBoldItalic;
     font-size: 60px;
@@ -239,3 +239,60 @@
     border-radius: 100px;
     background: var(--border-dark, #665F55);
 }
+
+/*FAVORITE COFFEE END*/
+
+/*ABOUT START*/
+
+.about__text {
+    padding-top: 100px;
+    color: var(--text-dark, #403F3D);
+    font-family: Inter-SemiBold;
+    font-size: 60px;
+    line-height: 125%;
+}
+
+.about__images {
+    padding-top: 40px;
+    display: flex;
+    gap: 40px;
+}
+
+.about-1 {
+    background-image: url(../../assets/images/about-1.jpg);
+    background-position: center;
+    margin-bottom: 40px;
+}
+
+.about-2 {
+    background-image: url(../../assets/images/about-2.jpg);
+    background-position: center;
+}
+
+.about-3 {
+    background-image: url(../../assets/images/about-3.jpg);
+    background-position: center;
+    margin-bottom: 40px;
+}
+
+.about-4 {
+    background-image: url(../../assets/images/about-4.jpg);
+    background-position: center;
+}
+
+
+
+.pic-large {
+    border-radius: 20px;
+    width: 660px;
+    height: 590px;
+}
+
+.pic-small {
+    border-radius: 20px;
+    width: 660px;
+    height: 430px;
+}
+
+
+
