@@ -119,7 +119,8 @@
     font-family: Inter-Regular;
     line-height: 150%;
     color: var(--text-light, #E1D4C9);
-    padding-top: 40px;
+    font-size: 16px;
+    padding-top: 42px;
     margin-bottom: 40px;
 }
 
@@ -293,6 +294,96 @@
     width: 660px;
     height: 430px;
 }
+
+/*ABOUT END*/
+
+/*MOBILE-APP START*/
+
+.mobile-app__content {
+    display: flex;
+    padding-top: 100px;
+}
+
+.mobile-app__text {
+    padding-top: 145px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    max-width: 630px;
+}
+
+.mobile-app__offer {
+    color: var(--text-dark, #403F3D);
+    font-family: Inter-SemiBold;
+    font-size: 60px;
+    line-height: 125%;
+}
+
+.mobile-app__mobile-screens {
+    background-image: url(../../assets/images/mobile-screens.png);
+    width: 630px;
+    height: 630px;
+    margin-left: auto;
+}
+
+.mobile-app__description {
+    color: var(--text-dark, #403F3D);
+    font-family: Inter-Regular;
+    line-height: 150%;
+}
+
+.btn-store {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+.button-app-store, .button-google-play {
+    width: 200px;
+    height: 64px;
+}
+
+.button-app-store, .button-google-play {
+    display: flex;
+    width: 200px;
+    padding: 12px 20px;
+    align-items: center;
+    gap: 8px;
+    border-radius: 100px;
+    border: 1px solid var(--border-dark, #665F55);
+}
+.app-store__icon {
+    background-image: url(../../assets/icons/appstore-icon.svg);
+    width: 36px;
+    height: 36px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.app-store__caption, .google-play__caption {
+    color: var(--text-dark, #403F3D);
+    text-align: start;
+    font-family: Inter-SemiBold;
+    font-size: 10px;
+    line-height: 140%;
+}
+.app-store__link, .google-play__link {
+    color: var(--text-dark, #403F3D);
+    font-family: Inter-SemiBold;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.google-play__icon {
+    background-image: url(../../assets/icons/googleplay-icon.svg);
+    width: 36px;
+    height: 36px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/*MOBILE-APP END*/
+
+
 
 
 
