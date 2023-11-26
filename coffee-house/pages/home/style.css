@@ -37,7 +37,7 @@
     max-width: 1440px;
     margin: 0 auto;
     padding: 0 40px;
-    background-color: #E1D4C9;
+    background: var(--background-body, #E1D4C9);
 }
 
 /* HEADER START */
@@ -350,6 +350,7 @@
     gap: 8px;
     border-radius: 100px;
     border: 1px solid var(--border-dark, #665F55);
+    background: var(--background-body, #E1D4C9);
 }
 .app-store__icon {
     background-image: url(../../assets/icons/appstore-icon.svg);
@@ -383,6 +384,125 @@
 
 /*MOBILE-APP END*/
 
+/*FOOTER START*/ 
+
+ .footer {
+    background: var(--background-body, #E1D4C9);
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 40px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+ }
+
+ .footer-container {
+    border-radius: 40px;
+    background: var(--background-container, #665F55);
+    height: 450px;
+    display: flex;
+ }
+
+ .socials {
+    width: 600px;
+    padding: 100px 0 0 100px;
+ }
+
+ .socials__text {
+    color: var(--text-light, #E1D4C9);
+    font-family: Inter-SemiBold;
+    font-size: 60px;
+    line-height: 125%;
+ }
+
+ .socials__link {
+    display: flex;
+    gap: 12px;
+    padding-top: 40px;
+ }
+
+ .socials__icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    border: 1px solid var(--background-body, #E1D4C9);
+    background: var(--background-container, #665F55);  
+    background-position: center;
+    background-repeat: no-repeat;
+ }
+
+ .twitter {
+    background-image: url(../../assets/icons/twitter.svg);
+ }
+
+ .instagram {
+    background-image: url(../../assets/icons/instagram.svg);
+ }
+
+ .facebook {
+    background-image: url(../../assets/icons/facebook.svg);
+ }
+
+ .contacts-info {
+    padding-top: 134px;
+    padding-left: 130px;
+ }
+
+ .contact-title {
+    color: var(--text-light, #E1D4C9);
+    font-family: Inter-SemiBold;
+    font-size: 24px;
+    line-height: 125%;
+ }
+
+ .contact-text {
+    color: var(--text-light, #E1D4C9);
+    font-family: Inter-SemiBold;
+    font-size: 16px;
+    line-height: 150%;
+ }
+
+ .address, .phone, .work-time {
+    display: flex;
+    gap: 8px;
+ }
+
+ .address {
+    padding-top: 40px;
+ }
+
+ .phone {
+    padding-top: 20px;
+ }
+
+ .work-time {
+    padding-top: 20px;
+ }
+
+ .pin-alt-icon {
+   background-image: url(../../assets/icons/pin-alt.svg);
+   width: 20px;
+   height: 20px;
+   background-position: center;
+   background-repeat: no-repeat;
+ }
+
+ .phone-icon {
+    background-image: url(../../assets/icons/phone.svg);
+    width: 20px;
+    height: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+ }
+
+ .work-time-icon {
+    background-image: url(../../assets/icons/clock.svg);
+    width: 20px;
+    height: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+ }
+
+/*FOOTER END*/
 
 
 
