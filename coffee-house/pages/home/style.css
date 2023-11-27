@@ -17,14 +17,22 @@
 }
 
 :root {
-   --text-dark: #403F3D;
-   --text-light: #E1D4C9;
-   --text-accent: #B0907A;
-   --background-body: #E1D4C9;
-   --background-container: #665F55;
-   --background-backdrop: rgba(64, 63, 61, 0.80);
-   --border-light: #C1B6AD;
-   --border-dark: #665F55;
+    --text-dark: #403F3D;
+    --text-light: #E1D4C9;
+    --text-accent: #B0907A;
+    --background-body: #E1D4C9;
+    --background-container: #665F55;
+    --background-backdrop: rgba(64, 63, 61, 0.80);
+    --border-light: #C1B6AD;
+    --border-dark: #665F55;
+ }
+
+html {
+    scroll-behavior: smooth;
+  }
+
+body {
+    background: var(--background-body, #E1D4C9);
 }
 
 * {
@@ -70,16 +78,39 @@
     padding-left: 0;
 }
 
+.nav-link {
+    text-decoration: none;
+    color: var(--text-dark, #403F3D);
+    position: relative;
+}
+
+.nav-link::before, .coffee-menu::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background-color: var(--text-dark, #403F3D);
+    transform-origin: center;
+    transition: transform 0.7s, width 0.7s;
+}
+
+.nav-link:hover::before, .coffee-menu:hover::before {
+    width: 100%;
+    transform: translateX(-50%);
+}
+
 .coffee-menu {
     display: flex;
     gap: 8px;
+    position: relative;
 }
 
 .coffee-menu__cup {
     background-image: url(../../assets/icons/coffee-cup.svg);
     width: 20px;
     height: 20px;
-
 }
 
 /*HEADER END*/
@@ -135,6 +166,11 @@
     font-family: Inter-SemiBold;
     font-size: 16px;
     line-height: 150%;
+}
+
+.menu-link {
+    text-decoration: none;
+    color: var(--text-dark, #403F3D); 
 }
 
 /*ENJOY END*/
