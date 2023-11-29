@@ -354,18 +354,25 @@ body {
     background-position: center;
 }
 
-
-
 .pic-large {
     border-radius: 20px;
     width: 660px;
     height: 590px;
+    background-size: 110%;
+    transition: 0.5s;
 }
 
 .pic-small {
     border-radius: 20px;
     width: 660px;
     height: 430px;
+    background-size: 110%;
+    transition: 0.5s;
+}
+
+.pic-large:hover, .pic-small:hover {
+    background-size: 100%;
+    transition: 0.5s;
 }
 
 /*ABOUT END*/
@@ -424,13 +431,7 @@ body {
     border-radius: 100px;
     border: 1px solid var(--border-dark, #665F55);
     background: var(--background-body, #E1D4C9);
-}
-.app-store__icon {
-    background-image: url(../../assets/icons/appstore-icon.svg);
-    width: 36px;
-    height: 36px;
-    background-position: center;
-    background-repeat: no-repeat;
+    transition: 1s;
 }
 
 .app-store__caption, .google-play__caption {
@@ -439,20 +440,35 @@ body {
     font-family: Inter-SemiBold;
     font-size: 10px;
     line-height: 140%;
+    transition: 1s;
 }
 .app-store__link, .google-play__link {
     color: var(--text-dark, #403F3D);
     font-family: Inter-SemiBold;
     font-size: 16px;
     line-height: 150%;
+    transition: 1s;
 }
 
-.google-play__icon {
-    background-image: url(../../assets/icons/googleplay-icon.svg);
-    width: 36px;
-    height: 36px;
-    background-position: center;
-    background-repeat: no-repeat;
+.app-store__icon, .google-play__icon {
+    transition: 1s;
+}
+
+.button-app-store:hover, .button-google-play:hover {
+    cursor: pointer;
+    background: var(--background-container, #665F55);
+    transition: 1s;
+}
+
+.button-app-store:hover .app-store__icon, .button-google-play:hover .google-play__icon {
+    filter: invert(94%) sepia(9%) saturate(447%) hue-rotate(334deg) brightness(126%) contrast(84%);
+    transition: 1s;
+}
+
+.button-app-store:hover .app-store__link, .button-google-play:hover .google-play__link,
+.button-app-store:hover .app-store__caption, .button-google-play:hover .google-play__caption {
+    color: var(--text-light, #E1D4C9);
+    transition: 1s;
 }
 
 /*MOBILE-APP END*/
@@ -494,25 +510,30 @@ body {
  }
 
  .socials__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 60px;
     height: 60px;
     border-radius: 30px;
     border: 1px solid var(--background-body, #E1D4C9);
-    background: var(--background-container, #665F55);  
-    background-position: center;
-    background-repeat: no-repeat;
+    background: var(--background-container, #665F55);
+    transition: 1s;
  }
 
- .twitter {
-    background-image: url(../../assets/icons/twitter.svg);
+ .soc-icon {
+    transition: 1s;
  }
 
- .instagram {
-    background-image: url(../../assets/icons/instagram.svg);
+ .socials__icon:hover {
+    cursor: pointer;
+    background: var(--background-body, #E1D4C9);
+    transition: 1s;
  }
 
- .facebook {
-    background-image: url(../../assets/icons/facebook.svg);
+ .socials__icon:hover .soc-icon {
+    filter: invert(41%) sepia(10%) saturate(562%) hue-rotate(356deg) brightness(82%) contrast(80%);
+    transition: 1s;
  }
 
  .contacts-info {
@@ -532,7 +553,26 @@ body {
     font-family: Inter-SemiBold;
     font-size: 16px;
     line-height: 150%;
+    text-decoration: none;
+    position: relative;
  }
+
+ .contact-text::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background-color: var(--text-light, #E1D4C9);
+    transform-origin: center;
+    transition: transform 0.7s, width 0.7s;
+}
+
+.contact-text:hover::before {
+    width: 100%;
+    transform: translateX(-50%);
+}
 
  .address, .phone, .work-time {
     display: flex;
