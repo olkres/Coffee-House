@@ -117,7 +117,7 @@ body {
 
 /*ENJOY START*/
 
-.enjoy {
+.enjoy__content {
     background-image: url(../../assets/images/img-hero.jpg);
     max-width: 1440px;
     height: 645px;
@@ -156,21 +156,52 @@ body {
 }
 
 .offer-button {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 200px;
     height: 64px;
     border-radius: 100px;
     background: var(--background-body, #E1D4C9);
-    border: none;
+    text-decoration: none;
     color: var(--text-dark, #403F3D);
-    text-align: center;
     font-family: Inter-SemiBold;
     font-size: 16px;
     line-height: 150%;
 }
 
+.offer-button-text {
+    transition: transform 0.7s;
+  }
+  
+  .offer-button::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 58%; 
+    transform: translateY(-50%);
+    background-image: url('../../assets/icons/coffee-cup.svg');
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transition: opacity 0.7s;
+  }
+  
+  .offer-button:hover .offer-button-text {
+    transform: translateX(-15px);
+    transition: transform 0.7s;
+  }
+  
+  .offer-button:hover::after {
+    opacity: 1;
+  }
+
 .menu-link {
     text-decoration: none;
-    color: var(--text-dark, #403F3D); 
+    color: var(--text-dark, #403F3D);
 }
 
 /*ENJOY END*/
@@ -207,9 +238,7 @@ body {
     border-radius: 30px;
     border: 1px solid var(--border-dark, #665F55);
     background-color: var(--background-body, #E1D4C9);
-    background-image: url(../../assets/icons/arrow-left.svg);
-    background-position: center;
-    background-repeat: no-repeat;
+    transition: 0.5s;
 }
 
 .slider {
@@ -258,9 +287,17 @@ body {
     border-radius: 30px;
     border: 1px solid var(--border-dark, #665F55);
     background-color: var(--background-body, #E1D4C9);
-    background-image: url(../../assets/icons/arrow-right.svg);
-    background-position: center;
-    background-repeat: no-repeat; 
+    transition: 0.5s;
+}
+
+.right-btn:hover, .left-btn:hover {
+    cursor: pointer;
+    background: var(--background-container, #665F55);
+    transition: 0.5s;
+}
+  
+.right-btn:hover .arrow, .left-btn:hover .arrow {
+    filter: invert(97%) sepia(6%) saturate(1104%) hue-rotate(313deg) brightness(92%) contrast(90%);
 }
 
 .controls {
