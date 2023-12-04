@@ -338,49 +338,41 @@ body {
 .about__images {
     padding-top: 40px;
     display: flex;
-    gap: 40px;
+    column-gap: 40px;
 }
 
-.about-1 {
-    background-image: url(../../assets/images/about-1.jpg);
-    background-position: center;
-    margin-bottom: 40px;
+.about__images-column {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+    width: calc(50% - 20px);
 }
 
-.about-2 {
-    background-image: url(../../assets/images/about-2.jpg);
-    background-position: center;
+.image-gallery {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    transform: scale(1.1);
+    transition: 0.5s;
 }
 
-.about-3 {
-    background-image: url(../../assets/images/about-3.jpg);
-    background-position: center;
-    margin-bottom: 40px;
-}
-
-.about-4 {
-    background-image: url(../../assets/images/about-4.jpg);
-    background-position: center;
+.about__images-gallery {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 20px; 
 }
 
 .pic-large {
-    border-radius: 20px;
-    width: 660px;
     height: 590px;
-    background-size: 110%;
-    transition: 0.5s;
+    
 }
 
 .pic-small {
-    border-radius: 20px;
-    width: 660px;
     height: 430px;
-    background-size: 110%;
-    transition: 0.5s;
 }
 
-.pic-large:hover, .pic-small:hover {
-    background-size: 100%;
+.image-gallery:hover {
+    transform: scale(1);
     transition: 0.5s;
 }
 
@@ -669,16 +661,15 @@ body {
 .right-btn {
     right: 0;
 }
-.pic-large {
-    width: 690px;
-    background-size: 105%;
+.about__images-column {
+    width: 100%;
 }
 .pic-small {
     display: none;
 }
 .about__images {
     flex-direction: column;
-    gap: 0;
+    gap: 40px;
 }
 .mobile-app__content {
     flex-direction: column;
@@ -706,6 +697,78 @@ body {
 }
 
 /*ADAPTIVE 768 END*/
+
+/*ADAPTIVE 380 START*/
+
+@media (max-width: 380px) {
+    .container {
+        padding: 0 16px;
+    }
+    .red-italic,
+    .favorite-coffee__text,
+    .about__text,
+    .mobile-app__offer,
+    .socials__text {
+        font-size: 32px;
+        line-height: 125%;
+    }
+    .enjoy__content {
+        height: 555px;
+    }
+    .offer {
+        padding-top: 60px;
+        padding-left: 15px;
+        width: auto;
+    }
+    .offer-text {
+        font-size: 42px;
+        line-height: 115%; 
+    }
+    .italic-text {
+        font-size: 42px;
+        line-height: 115%;
+    }
+    .description {
+        width: 320px;
+    }
+    .right-btn, .left-btn {
+        display: none;
+    }
+    .image-gallery {
+        transform: scale(1.25);
+    }
+    .coffee__pic {
+        width: 348px;
+        height: 348px;
+    }
+    .coffee {
+        width: auto;
+    }
+    .mobile-app__text {
+        margin-bottom: 40px;
+    }
+    .mobile-app__mobile-screens {
+        width: 348px;
+        height: 348px;
+        background-size: cover;
+    }
+    .btn-store {
+        flex-direction: column;
+    }
+    .footer {
+        padding: 100px 16px 40px 16px;
+    }
+    .socials {
+        padding: 60px 30px 0 15px;
+    }
+    .contacts-info {
+        padding-top: 40px;
+        padding-left: 15px;
+        margin-bottom: 65px;
+    }
+}
+
+/*ADAPTIVE 380 END*/
 
 
 

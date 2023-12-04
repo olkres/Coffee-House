@@ -59,6 +59,9 @@ body {
 }
 
 /* HEADER START */
+.burger-menu {
+    display: none;
+}
 
 .header {
     padding-top: 20px;
@@ -502,3 +505,35 @@ body {
 }
 
 /*ADAPTIVE 768 END*/
+
+@media (max-width: 380px) {
+    .container {
+        padding: 0 16px;
+    }
+    .menu__title,
+    .socials__text {
+        width: 348px;
+        font-size: 32px;
+        line-height: 125%;
+    }
+   .red-italic {
+        font-size: 32px;
+        line-height: 125%;
+    }
+    .footer {
+        padding: 100px 16px 40px 16px;
+    }
+    .socials {
+        padding: 60px 30px 0 15px;
+    }
+    .contacts-info {
+        padding-top: 40px;
+        padding-left: 15px;
+        margin-bottom: 65px;
+    }
+    .socials {
+        width: auto;
+    }
+}
+
+/*ADAPTIVE 380 END*/
