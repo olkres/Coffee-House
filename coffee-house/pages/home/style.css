@@ -249,36 +249,23 @@ body {
 
 .carousel {
     position: relative;
-    display: flex;
-    justify-content: space-between;
-}
-
-.left-btn {
-    position: absolute;
-    top: 329px;
-    left: 5px;
-    width: 60px;
-    height: 60px;
-    border-radius: 30px;
-    border: 1px solid var(--border-dark, #665F55);
-    background-color: var(--background-body, #E1D4C9);
-    transition: 0.5s;
+    height: 680px;
+    text-align: center;
+    overflow: hidden;
 }
 
 .slider {
     margin: 0 auto;
+    display: flex;
+    padding-top: 40px;
+    transition: all 0.7s;
 }
 
-.coffee {
+.slider-pic {
     width: 480px;
-    padding-top: 40px;
+    height: auto;
 }
-.coffee__pic {
-    background-image: url(../../assets/images/coffee-slider-1.png);
-    width: 480px;
-    height: 480px;
-    background-size: cover;
-}
+
 .coffee__name {
     padding-top: 20px;
     color: var(--text-dark, #403F3D);
@@ -288,6 +275,8 @@ body {
     line-height: 125%;
 }
 .coffee__description {
+    max-width: 480px;
+    margin: 0 auto;
     padding-top: 15px;
     color: var(--text-dark, #403F3D);
     text-align: center;
@@ -301,6 +290,17 @@ body {
     font-family: Inter-SemiBold;
     font-size: 24px;
     line-height: 125%;
+}
+.left-btn {
+    position: absolute;
+    top: 329px;
+    left: 5px;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    border: 1px solid var(--border-dark, #665F55);
+    background-color: var(--background-body, #E1D4C9);
+    transition: 0.5s;
 }
 .right-btn {
     position: absolute;
@@ -335,7 +335,15 @@ body {
     width: 40px;
     height: 4px;
     border-radius: 100px;
-    background: var(--border-dark, #665F55);
+    background: var(--border-light);
+}
+
+.control:active {
+    background: var(--border-dark);
+}
+
+.active {
+    background: var(--border-dark);
 }
 
 /*FAVORITE COFFEE END*/
